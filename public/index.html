@@ -1,13 +1,200 @@
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-  <title>Express</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>CI-Calculator</title>
 </head>
 
 <body>
-  <h1>Express</h1>
-  <p>Welcome to Express</p>
+  <div class="container pt-md-4">
+    <div class="display-6 bg-primary text-center">
+      <h2>Inputs</h2>
+    </div>
+  </div>
+
+  
+
+  <div class="container m-2 pt-md-4">
+    <div class="row">
+      <div class="offset-4">
+        <form action="">
+          <table class="table-borderless">
+            <!--<thead>
+              <th colspan="2" class="display-6 bg-primary text-center">Inputs</th>
+            </thead>-->
+            <tbody>
+              <tr>
+                <td>
+                  <label for="current principal">Current Principal:</label>
+                </td>
+                <td>
+                  <span>$</span>
+                  <input type="text" class="">
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="Annual Addition">Annual Addition:</label> 
+                </td>
+                <td>
+                  <span>$</span>
+                  <input type="text">
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="Years to grow">Years to grow:</label>
+                </td>
+                <td>
+                  &nbsp;&nbsp;
+                  <input type="text">
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="Interest Rate">Interest Rate:</label>
+                </td>
+                <td>
+                  &nbsp;&nbsp;
+                  <input type="text">
+                  <span>%</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        
+          <div class="col-md-8 mb-2 form-group">
+            <label for="Compound interest">Compound Interest</label>
+            <input type="text" name="" id="">
+            <label for="times annually">time(s) annually</label>
+          </div>
+
+          <div class="col-md-8 mb-2 form-group">
+            <label for="Make additions at">Make additions at</label>
+            <input type="radio">
+            <label for="flexRadio">Start</label>
+            <input type="radio">
+            <label for="flexRadio2">end of each compounding period</label>
+          </div>
+        
+          <div class="container">
+            <div class="col-md-4 text-center">
+              <button class="btn btn-primary">Calculate</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="m-2 pt-md-4 text-center">
+      <h2><span class="display-5 bg-primary">Results</span></h2>
+    </div>
+  
+    <div class="d-flex justify-content-center">
+      <div class="col-form-label">
+        <label for="FutureValue">Future Value:&nbsp;</label>
+      </div>
+      &nbsp;
+      <div class="col-form-label">
+        <input type="text" class="form-control" id="inputText">
+      </div>
+    </div>
+  </div> 
+
+<!-- HTML CODE WITH NO MODIFICATIONS -->
+
+<!-- <div class="m-2 pt-md-4 text-center">
+  <h1 class="display-5 bg-primary">Inputs</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-8 offset-4">
+
+  <form action="">
+
+  <div class="col-md-8 mb-2 form-group">
+    <label for="current principal">Current Principal:</label>
+    <span>$</span>
+    <input type="text" class="">
+  </div>
+
+
+  <div class="col-md-8 mb-2 form-group">
+    <label for="Annual Addition">Annual Addition:</label>
+    <span>$</span>
+    <input type="text">
+  </div>
+
+  <div class="col-md-8 mb-2 form-group">
+    <label for="Years to grow">Years to grow</label>
+    <input type="text">
+  </div>
+
+  <div class="col-md-8 mb-2 form-group">
+    <label for="Interest Rate">Interest Rate</label>
+    <input type="text">
+    <span>%</span>
+  </div>
+
+  <div class="col-md-8 mb-2 form-group">
+    <label for="Compound interest">Compound Interest</label>
+    <input type="text" name="" id="">
+    <label for="times annually">time(s) annually</label>
+  </div>
+
+  <div class="col-md-8 mb-2 form-group">
+    <label for="Make additions at">Make additions at</label>
+    <input type="radio">
+    <label for="flexRadio">Start</label>
+    <input type="radio">
+    <label for="flexRadio2">end of each compounding period</label>
+  </div>
+
+
+  <button class="">Calculate</button>
+
+<div class="m-2 pt-md-4 text-center">
+  <h2 class="display-5 bg-primary">Results</h2>
+</div>
+
+  <div class="form-group row">
+    <label for="FutureValue" class="col-sm-2 col-form-label">Future Value:</label>
+    <div class="col-sm-3">
+      <input type="text" class="form-control" id="inputText">
+    </div>
+  </div>
+
+</form>
+
+</div>
+</div> -->
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous">
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  <script src="/javascripts/index.js"></script>
 </body>
 
 </html>
